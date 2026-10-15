@@ -5,7 +5,7 @@
 <main class="seccion">
 
     <x-header-herramientas class="py-5 titulo"
-        background="background-image: url({{ asset('storage/img/home/home.jpg')}})" title="Configurador de Cubiertas LEROY"
+        background="background-image: url({{ asset('storage/img/home/home.jpg')}})" title="Configurador de Cubiertas BLUE COVER"
         description="Configura y calcula tu cubierta." :user="$user" logo="{{ asset('img/brand/leroy_merlin.jpg') }}"
         logoAlt="Leroy Merlin" />
 
