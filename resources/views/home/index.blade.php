@@ -2,7 +2,7 @@
 
 @section('content')
     <main class="home">
-        <x-header title="Configurador cubiertas LEROY"
+        <x-header title="Configurador cubiertas BLUECOVER"
             description="PS POOL quiere ayudarte con distintas herramientas que hemos desarrollado y recopilado, para facilitarte la puesta a punto de tu piscina."
             background="background-image: url({{ asset('storage/img/home/home.jpg') }})" :user="$user" />
 
