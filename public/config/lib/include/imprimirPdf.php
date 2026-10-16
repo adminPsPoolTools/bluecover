@@ -31,13 +31,13 @@ function obtenerFacturaPresupuesto($conn, $presupuesto, $datosClienteFinal, $apl
     $totalPresupuesto = (float) $row->TOTAL;
     $formaPagoPresupuesto = $row->FORMADEPAGO;
 
-    // Logo Leroy Merlin en base64 para que funcione en cualquier contexto (ventana nueva, html2pdf, etc.)
-    $logoPath = __DIR__ . '/../../../img/brand/leroy_merlin.jpg';
+    // Logo BlueCover en base64 para que funcione en cualquier contexto (ventana nueva, html2pdf, etc.)
+    $logoPath = __DIR__ . '/../../../img/brand/bluecover.png';
     $logoBase64 = '';
     if (file_exists($logoPath)) {
-        $logoBase64 = 'data:image/jpeg;base64,' . base64_encode(file_get_contents($logoPath));
+        $logoBase64 = 'data:image/png;base64,' . base64_encode(file_get_contents($logoPath));
     }
-    // Logo Leroy Merlin en base64 para que funcione en cualquier contexto (ventana nueva, html2pdf, etc.)
+    // Logo BlueCover en base64 para que funcione en cualquier contexto (ventana nueva, html2pdf, etc.)
     $logoPath1 = __DIR__ . '/../../../img/brand/recorte_coronacion_1.jpg';
     $logoBase641 = '';
     if (file_exists($logoPath1)) {
@@ -11477,17 +11477,17 @@ function obtenerFacturaPresupuesto($conn, $presupuesto, $datosClienteFinal, $apl
     <div id="contenedor">
         <div class="h-100 d-flex flex-column align-self-start pages">
             <div class="border row no-gutters border-dark justify-content-end align-content-center">
-                <div class="border col-12 border-top-0 border-left-0 border-right-0 border-dark" style="background-color: #78be20">
+                <div class="border col-12 border-top-0 border-left-0 border-right-0 border-dark" style="background-color: #183469">
                     <h3 class="mb-0 text-center w-100" style="color: #fff;"><span><b>PRESUPUESTO ' . $codigoPresupuesto . '</b></span></h3>
                 </div>
                 <div class="p-2 col-6">
                     <img class="img-fluid w-50" src="' . $logoBase64 . '">
                     <div class="mt-2 row no-gutters">
-                        <span class="col-12"><b>LEROY MERLIN ESPA&Ntilde;A S.L.U.</b></span>
-                        <span class="col-12">C.I.F. B-84818442</span>
-                        <span class="col-12">Av. de la Vega, 2</span>
-                        <span class="col-12">28108 - Alcobendas (Madrid)</span>
-                        <span class="col-12">contacto@leroymerlin.es</span>
+                        <span class="col-12"><b>PS POOL EQUIPMENT, S.L. - BlueCover</b></span>
+                        <span class="col-12">C.I.F. B-53298501</span>
+                        <span class="col-12">C/ Zeus, P.I. Pla de Terol 43</span>
+                        <span class="col-12">03520 - Polop (Alicante)</span>
+                        <span class="col-12">info@ps-pool.com</span>
                     </div>
                     <div class="mt-2 row no-gutters">
                         <span class="p-2 text-center border border-dark col-5"><b>P&aacute;gina 1/4</b></span>
@@ -11507,7 +11507,7 @@ function obtenerFacturaPresupuesto($conn, $presupuesto, $datosClienteFinal, $apl
                         <span class="col-12">' . $datosClienteFinal . '</span>
                     </div>
                 </div>
-                <div class="border col-12 border-bottom-0 border-left-0 border-right-0 border-dark" style="background-color: #78be20">
+                <div class="border col-12 border-bottom-0 border-left-0 border-right-0 border-dark" style="background-color: #183469">
                     <h5 class="mb-0 text-center w-100" style="color: #fff;"><span><b>' . $descripcionCliente . '</b></span></h5>
                 </div>
             </div>
@@ -11633,7 +11633,7 @@ function obtenerFacturaPresupuesto($conn, $presupuesto, $datosClienteFinal, $apl
                             <div class="col-6"><u>21%</u></div>
                             <div class="col-6"><b><i>TOTAL</i></b></div>
                             <div class="pl-2 col-6">
-                                <div class="pr-1 border border-dark" style="background-color: #78be20">
+                                <div class="pr-1 border border-dark" style="background-color: #183469">
                                     <b style="color: #fff;">' . round($totalPresupuesto21, 2) . '&euro;</b>
                                 </div>
                             </div>
@@ -11776,7 +11776,7 @@ function obtenerFacturaPresupuesto($conn, $presupuesto, $datosClienteFinal, $apl
         </div>
         <div class="mb-0 w-100 align-self-end sticky-footer" id="sticky-footer">
             <div>
-                <span style="font-size:10px; line-height:10px">Informaci&oacute;n b&aacute;sica sobre Protecci&oacute;n de Datos: Se garantiza el estricto cumplimiento de la normativa vigente sobre protecci&oacute;n de datos de car&aacute;cter personal. La finalidad del tratamiento es la gesti&oacute;n contable, fiscal y administrativa de los datos facilitados. La base jur&iacute;dica est&aacute; basada en el consentimiento. NO CEDEMOS DATOS A TERCEROS salvo en supuestos imprescindibles para el correcto cumplimiento de la relaci&oacute;n establecida. Los derechos de acceso, rectificaci&oacute;n, supresi&oacute;n, limitaci&oacute;n u oposici&oacute;n al tratamiento podr&aacute;n ejercitarse ante: LEROY MERLIN ESPA&Ntilde;A S.L.U., Av. de la Vega 2, 28108 Alcobendas (Madrid) o en contacto@leroymerlin.es.</span>
+                <span style="font-size:10px; line-height:10px">Informaci&oacute;n b&aacute;sica sobre Protecci&oacute;n de Datos: Se garantiza el estricto cumplimiento de la normativa vigente sobre protecci&oacute;n de datos de car&aacute;cter personal. La finalidad del tratamiento es la gesti&oacute;n contable, fiscal y administrativa de los datos facilitados. La base jur&iacute;dica est&aacute; basada en el consentimiento. NO CEDEMOS DATOS A TERCEROS salvo en supuestos imprescindibles para el correcto cumplimiento de la relaci&oacute;n establecida. Los derechos de acceso, rectificaci&oacute;n, supresi&oacute;n, limitaci&oacute;n u oposici&oacute;n al tratamiento podr&aacute;n ejercitarse ante: PS POOL EQUIPMENT, S.L., C/ Zeus, P.I. Pla de Terol 43, 03520 Polop (Alicante) o en info@ps-pool.com.</span>
             </div>
         </div>
     </div><!-- fin de contenedor -->

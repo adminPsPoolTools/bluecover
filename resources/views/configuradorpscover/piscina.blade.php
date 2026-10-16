@@ -1,5 +1,5 @@
 <div id="piscina">
-    <div class="dibujo pscover-media relative bg-lime-50">
+    <div class="dibujo pscover-media relative bg-sky-50">
         <div id="dibupiscina"></div>
     </div>
 

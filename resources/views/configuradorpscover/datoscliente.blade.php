@@ -1,9 +1,9 @@
 <div id="cliente0">
 
-    <div class="dibujo pscover-media relative bg-lime-50">
+    <div class="dibujo pscover-media relative bg-sky-50">
         <div id="dibucliente"><img src="../../../config/img/usuario.png"></div>
         <h2>Datos personales</h2><br>
-        Estos son los campos obligatorios:
+        <span class="cliente-obligatorios">Estos son los campos obligatorios:</span>
 
         <div id="comprobacion" class="comprobacion desktop">
             <div class="comproba" id="comp-nombre"><img src="../../../config/img/checkok.png" align="absmiddle">
@@ -44,6 +44,7 @@
         <div class="salto"></div>
 
         <div id="comprobacion-mobile" class="comprobacion mobile">
+            <div class="peque">Campos obligatorios:</div>
             <div class="comproba" id="comp-nombre"><img src="../../../config/img/checkok.png" align="absmiddle">
                 <div class="txt">Nombre</div>
             </div>

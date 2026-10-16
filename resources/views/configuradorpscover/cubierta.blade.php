@@ -1,5 +1,5 @@
 <div id="cubierta">
-    <div class="dibujo pscover-media relative bg-lime-50">
+    <div class="dibujo pscover-media relative bg-sky-50">
         <div id="dibucubierta" style="display:flex; align-items:center; justify-content:center; width:100%; height:100%; padding:0;">
             <img src="../../../config/img/cubierta.jpg" width="100%" style="width:100%; height:100%; object-fit:contain; object-position:center;">
         </div>

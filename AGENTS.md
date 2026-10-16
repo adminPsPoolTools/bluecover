@@ -1,4 +1,4 @@
-# Agent: Leroy Merlin Configurador
+# Agent: BlueCover Configurador
 
 ## Objetivo
 Mantener y evolucionar esta aplicacion Laravel enfocada en herramientas de calculo para piscina y el configurador `pscover`, minimizando regresiones funcionales en flujos existentes.

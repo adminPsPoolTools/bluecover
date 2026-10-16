@@ -1,5 +1,5 @@
 <div id="final">
-    <div class="dibujo pscover-media relative bg-lime-50">
+    <div class="dibujo pscover-media relative bg-sky-50">
         <div id="dibuprecio"><img src="../../../config/img/cubierta.jpg" width="100%"></div>
     </div>
 

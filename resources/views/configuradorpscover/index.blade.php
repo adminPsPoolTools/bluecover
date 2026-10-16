@@ -4,11 +4,13 @@
 
 <main class="seccion">
 
-    <x-header-herramientas class="py-5 titulo"
-        background="background-image: url({{ asset('storage/img/home/home.jpg')}})" title="Configurador de Cubiertas BLUE COVER"
-        description="Configura y calcula tu cubierta." :user="$user" logo="{{ asset('img/brand/leroy_merlin.jpg') }}"
-        logoAlt="Leroy Merlin" />
+    {{-- <x-header-herramientas class="py-5 titulo"
+        background="background-image: url({{ asset('storage/img/home/home.jpg')}})" title="Configurador de Cubiertas BlueCover"
+        description="Configura y calcula tu cubierta." :user="$user" logo="{{ asset('img/brand/bluecover.png') }}"
+        logoAlt="BlueCover" /> --}}
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="{{ asset('config/lib/css/configurador.css') }}?v={{ filemtime(public_path('config/lib/css/configurador.css')) }}" />
     <script src="{{ asset('config/lib/js/jquery.min.js') }}"></script>
@@ -20,12 +22,12 @@
         <div class="px-4 caja">
 
             <div id="errormail" class="enespera" style="z-index: 1002;">
-                <div class="error"><img src="img/checkko.png" align="absmiddle"><br>
+                <div class="error"><img src="{{ asset('config/img/checkko.png') }}" align="absmiddle"><br>
                     <div id="errortxt"></div>
                 </div>
             </div>
             <div id="correcto" class="enespera" style="z-index: 1002;">
-                <div class="correcto"><img src="img/checkok.png" align="absmiddle"><br>La informaciÃƒÂ³n ha sido enviada
+                <div class="correcto"><img src="{{ asset('config/img/checkok.png') }}" align="absmiddle"><br>La informaciÃƒÂ³n ha sido enviada
                 </div>
             </div>
 
@@ -264,7 +266,7 @@
 
 <style>
     body {
-        background: linear-gradient(165deg, #f3f5f1 0%, #ffffff 70%);
+        background: linear-gradient(165deg, #f1f4f5 0%, #ffffff 70%);
     }
 
     .seccion {
@@ -273,17 +275,23 @@
 
     .contenido {
         background: #ffffff;
-        border: 1px solid #d9e1cf;
+        border: 1px solid #cfdde1;
         border-radius: 16px;
-        box-shadow: 0 16px 40px rgba(46, 58, 46, 0.1);
+        box-shadow: 0 16px 40px rgba(46, 55, 58, 0.1);
         padding: 1.1rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
+    }
+
+    /* theme.css aplica margin-top: -150px a .contenido para solaparse con la cabecera,
+       aqui la cabecera esta desactivada asi que lo anulamos */
+    .seccion .contenido {
+        margin-top: 3rem;
     }
 
     .caja {
         border-radius: 14px;
-        border: 1px solid #e3ebd9;
-        background: #f7f9f4;
+        border: 1px solid #d9e7eb;
+        background: #f4f8f9;
         padding: 1rem;
     }
 
@@ -298,13 +306,34 @@
         margin-bottom: 0;
     }
 
-    @media (max-width: 768px) {
-        .contenido {
-            padding: 0.8rem;
+    /* Tablet: styles.css fuerza .container { max-width: 80% !important } en todas las paginas */
+    @media (max-width: 1100px) {
+        .seccion .contenido {
+            max-width: 100% !important;
         }
 
-        .caja {
-            padding: 0.75rem;
+        .seccion .caja > .salto {
+            height: 8px !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .seccion {
+            padding: 0.75rem 0.5rem;
+        }
+
+        /* El layout ya envuelve la vista en main.seccion: evitamos doble relleno */
+        .seccion .seccion {
+            padding: 0;
+        }
+
+        .seccion .contenido {
+            padding: 0.5rem;
+            margin-top: 1.75rem;
+        }
+
+        .seccion .caja {
+            padding: 0.5rem !important;
         }
 
         .cabhome .header-logo-side {

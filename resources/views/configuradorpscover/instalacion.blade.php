@@ -1,5 +1,5 @@
 <div id="instalacion">
-    <div class="dibujo pscover-media relative bg-lime-50">
+    <div class="dibujo pscover-media relative bg-sky-50">
         <div id="dibuinstalacion"><img src="../../../config/img/laminas/laminas.jpg" width="100%"></div>
     </div>
     <div class="formtemp pscover-form flex flex-col">

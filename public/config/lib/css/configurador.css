@@ -1,13 +1,13 @@
 :root {
-  --lm-green: #78be20;
-  --lm-green-dark: #4f8f13;
-  --lm-green-soft: #eaf5d9;
-  --lm-ink: #1f2933;
-  --lm-muted: #5a6672;
-  --lm-border: #d9e1cf;
-  --lm-surface: #ffffff;
-  --lm-bg: #f3f5f1;
-  --lm-danger: #ba1e1e;
+  --bc-blue: #39b9d3;
+  --bc-blue-dark: #183469;
+  --bc-blue-soft: #e3f6fb;
+  --bc-ink: #1b2a41;
+  --bc-muted: #5a6672;
+  --bc-border: #cfe4ec;
+  --bc-surface: #ffffff;
+  --bc-bg: #f1f8fb;
+  --bc-danger: #ba1e1e;
   --pscover-step-height: 560px;
 }
 
@@ -32,11 +32,11 @@
   margin-left: -160px;
   padding: 12px 8px;
   border-radius: 10px;
-  border: 1px solid var(--lm-border);
+  border: 1px solid var(--bc-border);
   font-size: 16px;
   text-align: center;
   background: #fff;
-  color: var(--lm-ink);
+  color: var(--bc-ink);
 }
 
 .error,
@@ -53,18 +53,18 @@
   font: 14px "Figtree", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   border-radius: 12px;
-  border: 1px solid var(--lm-border);
+  border: 1px solid var(--bc-border);
   text-align: center;
 }
 
 .error {
   background: #fff4f4;
-  color: var(--lm-danger);
+  color: var(--bc-danger);
 }
 
 .correcto {
-  background: #f0fae6;
-  color: var(--lm-green-dark);
+  background: #e6f5fa;
+  color: var(--bc-blue-dark);
   padding: 48px 24px;
   font-size: 22px;
   font-weight: 800;
@@ -86,7 +86,7 @@
 
 body .campoerror {
   background: #fff4f4 !important;
-  border-color: var(--lm-danger) !important;
+  border-color: var(--bc-danger) !important;
 }
 
 .errorcampo {
@@ -102,7 +102,7 @@ body .campoerror {
 #btnprueba {
   width: 20px;
   height: 20px;
-  background-color: var(--lm-green-dark);
+  background-color: var(--bc-blue-dark);
   border: 0;
 }
 
@@ -114,7 +114,7 @@ body .campoerror {
 .peque {
   font-size: 11px;
   font-style: italic;
-  color: var(--lm-muted);
+  color: var(--bc-muted);
   padding: 3px 0;
 }
 
@@ -133,17 +133,17 @@ body .campoerror {
 #configurador {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #f6f9f1 0%, #edf4e4 100%);
-  color: var(--lm-ink);
-  font-family: "Figtree", Arial, sans-serif !important;
-  border: 1px solid var(--lm-border);
+  background: linear-gradient(180deg, #f1f7f9 0%, #e4f0f4 100%);
+  color: var(--bc-ink);
+  font-family: "Maven Pro", "Figtree", Arial, sans-serif !important;
+  border: 1px solid var(--bc-border);
   border-radius: 18px;
 }
 
 #configurador h2 {
   font-size: 32px;
   line-height: 1.15;
-  color: var(--lm-ink);
+  color: var(--bc-ink);
   margin-bottom: 0;
   text-shadow: none;
   letter-spacing: -0.02em;
@@ -154,11 +154,11 @@ body .campoerror {
 }
 
 #configurador h3 {
-  color: var(--lm-muted);
+  color: var(--bc-muted);
 }
 
 #configurador .titulo-modelo {
-  color: var(--lm-muted);
+  color: var(--bc-muted);
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -182,7 +182,7 @@ body .campoerror {
 #configurador button,
 #configurador select,
 #configurador textarea {
-  font-family: "Figtree", Arial, sans-serif;
+  font-family: "Maven Pro", "Figtree", Arial, sans-serif;
 }
 
 #configurador input[type="text"],
@@ -191,12 +191,12 @@ body .campoerror {
 #configurador input[type="password"],
 #configurador select,
 #configurador textarea {
-  border: 1px solid #c9d4bf;
+  border: 1px solid #bfcfd4;
   border-radius: 10px;
   background-color: #fff;
   font-size: 17px;
   font-weight: 600;
-  color: var(--lm-ink);
+  color: var(--bc-ink);
   margin-right: 10px;
   padding: 10px 12px;
   transition: border-color 0.2s, box-shadow 0.2s;
@@ -209,8 +209,8 @@ body .campoerror {
 #configurador select:focus,
 #configurador textarea:focus {
   outline: none;
-  border-color: var(--lm-green);
-  box-shadow: 0 0 0 3px rgba(120, 190, 32, 0.2);
+  border-color: var(--bc-blue);
+  box-shadow: 0 0 0 3px rgba(57, 185, 211, 0.2);
 }
 
 #configurador button {
@@ -218,7 +218,7 @@ body .campoerror {
   border-radius: 10px;
   border: 1px solid transparent;
   background-color: #fff;
-  color: var(--lm-ink);
+  color: var(--bc-ink);
   font-size: 17px;
   font-weight: 800;
   margin-right: 10px;
@@ -229,14 +229,14 @@ body .campoerror {
 
 #configurador button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(79, 143, 19, 0.15);
+  box-shadow: 0 8px 18px rgba(24, 52, 105, 0.15);
 }
 
 button.activo,
 .activo {
-  background-color: var(--lm-green-dark) !important;
+  background-color: var(--bc-blue-dark) !important;
   color: #fff !important;
-  border-color: var(--lm-green-dark) !important;
+  border-color: var(--bc-blue-dark) !important;
 }
 
 button:focus {
@@ -277,11 +277,11 @@ button:focus {
 #configurador button#enviaremail,
 #configurador .btnsiguiente,
 #configurador .btnanterior {
-  font-family: "Figtree", Arial, sans-serif;
+  font-family: "Maven Pro", "Figtree", Arial, sans-serif;
   color: #fff;
-  background-color: var(--lm-green);
-  border: 1px solid var(--lm-green);
-  box-shadow: 0 8px 16px rgba(120, 190, 32, 0.25);
+  background-color: var(--bc-blue);
+  border: 1px solid var(--bc-blue);
+  box-shadow: 0 8px 16px rgba(57, 185, 211, 0.25);
 }
 
 #configurador .btnsiguiente,
@@ -298,15 +298,15 @@ button:focus {
 
 #configurador .btnanterior {
   right: 250px;
-  background-color: #2d3a2d;
-  border-color: #2d3a2d;
-  box-shadow: 0 8px 16px rgba(45, 58, 45, 0.22);
+  background-color: #2d373a;
+  border-color: #2d373a;
+  box-shadow: 0 8px 16px rgba(45, 55, 58, 0.22);
 }
 
 .btnsiguiente:hover,
 .btnanterior:hover {
-  background-color: var(--lm-green-dark) !important;
-  border-color: var(--lm-green-dark) !important;
+  background-color: var(--bc-blue-dark) !important;
+  border-color: var(--bc-blue-dark) !important;
   color: #fff !important;
 }
 
@@ -416,9 +416,9 @@ button:disabled {
 #final .dibujo {
   float: left;
   width: 40%;
-  background: linear-gradient(145deg, #edf4e5 0%, #ddecc8 100%);
+  background: linear-gradient(145deg, #e5f0f4 0%, #c8e3ec 100%);
   overflow: hidden;
-  border-right: 1px solid var(--lm-border);
+  border-right: 1px solid var(--bc-border);
 }
 
 @media screen and (max-width: 700px) {
@@ -453,7 +453,7 @@ button:disabled {
   float: right;
   width: 60%;
   padding: 56px;
-  background: var(--lm-surface);
+  background: var(--bc-surface);
   min-height: 650px;
 }
 
@@ -514,7 +514,7 @@ button:disabled {
   width: 140px;
   margin-top: 15px;
   overflow: hidden;
-  color: var(--lm-muted);
+  color: var(--bc-muted);
   font-weight: 700;
 }
 
@@ -547,9 +547,9 @@ button:disabled {
   margin: 60px;
   width: 300px;
   height: 500px;
-  border: 20px solid #bac7ad;
-  border-image: url(../../../img/noise.jpg) 30 30 round;
-  background-image: url(../../../img/agua3.gif);
+  border: 20px solid #adc1c7;
+  border-image: url(../../img/noise.jpg) 30 30 round;
+  background-image: url(../../img/agua3.gif);
   background-color: #00bff3;
   background-position: center;
   border-radius: 16px;
@@ -560,8 +560,8 @@ button:disabled {
   width: 110px;
   margin-left: 10px;
   background-color: #fff;
-  color: var(--lm-ink);
-  border: 1px solid #c9d4bf;
+  color: var(--bc-ink);
+  border: 1px solid #bfcfd4;
   padding: 10px 8px;
   text-align: center;
 }
@@ -586,7 +586,7 @@ button:disabled {
 #escalera #enrollador .ui-controlgroup-controls .ui-btn-active,
 #escalera #posicion1 .ui-controlgroup-controls .ui-btn-active,
 #escalera #posicion2 .ui-controlgroup-controls .ui-btn-active {
-  background: var(--lm-green);
+  background: var(--bc-blue);
   border: none;
 }
 
@@ -631,13 +631,13 @@ button#posenrollador2 {
 
 button#posenrollador1:hover,
 button#posenrollador2:hover {
-  background-color: #e8f2d9 !important;
-  border-color: #bfd69f !important;
+  background-color: #d9ecf2 !important;
+  border-color: #9fc8d6 !important;
 }
 
 button#posenrollador1:active,
 button#posenrollador2:active {
-  background-color: #d3e9b3 !important;
+  background-color: #b3dce9 !important;
 }
 
 #escalera .posescalera {
@@ -650,7 +650,7 @@ button#posenrollador2:active {
 }
 
 #escalera .posescalera:hover {
-  background-color: #e8f2d9 !important;
+  background-color: #d9ecf2 !important;
 }
 
 @media screen and (max-width: 700px) {
@@ -703,17 +703,17 @@ button#posenrollador2:active {
   padding: 8px 2px;
   text-align: center;
   background: #fff;
-  color: var(--lm-ink);
-  border: 1px solid #d8e4c8;
+  color: var(--bc-ink);
+  border: 1px solid #c8dde4;
 }
 
 #lamina .collamina:hover {
-  background-color: #edf6df !important;
-  border-color: #bfd69f !important;
+  background-color: #dff0f6 !important;
+  border-color: #9fc8d6 !important;
 }
 
 #lamina .collamina:active {
-  background-color: #dff0c5 !important;
+  background-color: #c5e5f0 !important;
 }
 
 .provincias {
@@ -735,7 +735,7 @@ button#posenrollador2:active {
 
 #cliente0 .dibujo {
   padding: 60px;
-  background: linear-gradient(160deg, #edf4e5 0%, #d9ebbc 100%);
+  background: linear-gradient(160deg, #e5f0f4 0%, #bcdfeb 100%);
 }
 
 @media screen and (max-width: 700px) {
@@ -820,9 +820,9 @@ button#posenrollador2:active {
   float: left;
   font-size: 42px;
   font-weight: 800;
-  color: var(--lm-green-dark);
-  background-color: #f2f8e9;
-  border: 1px solid #cfe2b8;
+  color: var(--bc-blue-dark);
+  background-color: #e9f4f8;
+  border: 1px solid #b8d8e2;
   border-radius: 12px;
   padding: 8px 24px;
   margin-right: 5px;
@@ -862,11 +862,11 @@ button#posenrollador2:active {
 #errorCliente {
   display: none;
   padding: 30px;
-  background-color: #f2f8e9;
-  border: 1px solid #cfe2b8;
+  background-color: #e9f4f8;
+  border: 1px solid #b8d8e2;
   border-radius: 10px;
   font-size: 17px;
-  color: var(--lm-ink);
+  color: var(--bc-ink);
   text-align: center;
   width: 100%;
   overflow: hidden;
@@ -903,7 +903,7 @@ button#posenrollador2:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #d0d6cb;
+  background-color: #cbd3d6;
   transition: 0.4s;
 }
 
@@ -919,7 +919,7 @@ button#posenrollador2:active {
 }
 
 input:checked + .slider {
-  background-color: var(--lm-green);
+  background-color: var(--bc-blue);
 }
 
 input:checked + .slider:before {
@@ -939,16 +939,16 @@ input:checked + .slider:before {
   font-size: 21px;
   line-height: 1.25;
   padding-left: 8px;
-  color: var(--lm-ink);
+  color: var(--bc-ink);
 }
 
 /* Stepper */
 .pscover-stepper {
   margin: 0 0 14px;
   padding: 12px 14px 14px;
-  border: 1px solid #dbe6cd;
+  border: 1px solid #cde0e6;
   border-radius: 14px;
-  background: linear-gradient(135deg, #f8fbf3 0%, #eef6e2 100%);
+  background: linear-gradient(135deg, #f3f9fb 0%, #e2f1f6 100%);
 }
 
 .pscover-stepper-head {
@@ -959,7 +959,7 @@ input:checked + .slider:before {
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
-  color: #35512a;
+  color: #2a4751;
 }
 
 .pscover-stepper-track-wrap {
@@ -974,7 +974,7 @@ input:checked + .slider:before {
   top: 15px;
   height: 4px;
   border-radius: 999px;
-  background: #d7e2c8;
+  background: #c8dce2;
 }
 
 .pscover-stepper-progress {
@@ -984,7 +984,7 @@ input:checked + .slider:before {
   height: 4px;
   width: 0;
   border-radius: 999px;
-  background: linear-gradient(90deg, #7ec32a 0%, #5ea717 100%);
+  background: linear-gradient(90deg, #2a9dc3 0%, #1783a7 100%);
   transition: width 0.25s ease;
 }
 
@@ -995,8 +995,8 @@ input:checked + .slider:before {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #e7ffd1 0%, #78be20 62%, #4f8f13 100%);
-  box-shadow: 0 0 0 4px rgba(120, 190, 32, 0.2), 0 7px 14px rgba(79, 143, 19, 0.26);
+  background: radial-gradient(circle at 35% 35%, #d9f6ff 0%, #39b9d3 62%, #183469 100%);
+  box-shadow: 0 0 0 4px rgba(57, 185, 211, 0.2), 0 7px 14px rgba(24, 52, 105, 0.26);
   transition: left 0.25s ease;
   z-index: 3;
 }
@@ -1023,9 +1023,9 @@ input:checked + .slider:before {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  border: 2px solid #b9c7a8;
+  border: 2px solid #a8bfc7;
   background: #ffffff;
-  color: #5f6d57;
+  color: #57686d;
   font-size: 11px;
   font-weight: 800;
   line-height: 18px;
@@ -1037,7 +1037,7 @@ input:checked + .slider:before {
   margin-top: 6px;
   font-size: 10px;
   font-weight: 700;
-  color: #6a7763;
+  color: #637277;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   white-space: nowrap;
@@ -1047,20 +1047,20 @@ input:checked + .slider:before {
 }
 
 .pscover-step-item.is-complete .pscover-step-dot {
-  border-color: #78be20;
-  background: #b9e38a;
-  color: #2a4a1f;
+  border-color: #39b9d3;
+  background: #8acde3;
+  color: #1f3f4a;
 }
 
 .pscover-step-item.is-active .pscover-step-dot {
-  border-color: #4f8f13;
-  background: #78be20;
+  border-color: #183469;
+  background: #39b9d3;
   color: #ffffff;
   transform: scale(1.06);
 }
 
 .pscover-step-item.is-active .pscover-step-label {
-  color: #27431e;
+  color: #1e3a43;
 }
 
 /* Responsive hardening for configurador PS Cover */
@@ -1129,7 +1129,7 @@ input:checked + .slider:before {
 
 #configurador .flex {
   padding: 10px 12px;
-  border: 1px solid #e1e8d6;
+  border: 1px solid #d6e4e8;
   border-radius: 10px;
   background: #ffffff;
 }
@@ -1203,8 +1203,8 @@ input:checked + .slider:before {
 }
 
 #configurador .btnanterior {
-  background-color: #2d3a2d;
-  border-color: #2d3a2d;
+  background-color: #2d373a;
+  border-color: #2d373a;
 }
 
 #piscina #dibupiscina {
@@ -1314,17 +1314,17 @@ input:checked + .slider:before {
   line-height: 1.2;
   text-align: center;
   background: #fff;
-  color: var(--lm-ink);
-  border: 1px solid #d8e4c8;
+  color: var(--bc-ink);
+  border: 1px solid #c8dde4;
 }
 
 #lacado .collacado:hover {
-  background-color: #edf6df !important;
-  border-color: #bfd69f !important;
+  background-color: #dff0f6 !important;
+  border-color: #9fc8d6 !important;
 }
 
 #lacado .collacado:active {
-  background-color: #dff0c5 !important;
+  background-color: #c5e5f0 !important;
 }
 
 #lacado .collacado img {
@@ -1399,7 +1399,7 @@ input:checked + .slider:before {
     float: none;
     width: 100%;
     border-right: 0;
-    border-bottom: 1px solid var(--lm-border);
+    border-bottom: 1px solid var(--bc-border);
   }
 
   #cubierta .formtemp,
@@ -1447,6 +1447,11 @@ input:checked + .slider:before {
   .errorcampo {
     display: block;
     margin: 8px 0 0;
+  }
+
+  /* Los avisos ocultos solo se muestran cuando el JS los activa (fadeIn) */
+  .errorcampo.ocultar {
+    display: none;
   }
 
   #cliente0 .w50 {
@@ -1586,7 +1591,7 @@ input:checked + .slider:before {
   min-width: 150px;
   max-width: 380px;
   overflow: hidden;
-  border-right: 1px solid var(--lm-border);
+  border-right: 1px solid var(--bc-border);
   border-bottom: 0 !important;
 }
 
@@ -1983,5 +1988,249 @@ input:checked + .slider:before {
 
   #configurador .formtemp .ps-field-row {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================
+   Responsive BlueCover: tablet (<=1100px) y movil (<=700px)
+   Va al final para imponerse a los bloques anteriores.
+   ========================================================== */
+
+/* Escalera: oculta la tarjeta de medidas mientras el JS la tiene oculta */
+#escalera .ps-input-col:has(> #medidasescalera[style*="display: none"]) {
+  display: none !important;
+}
+
+/* Cliente (todas las pantallas): icono contenido para que el titulo y la lista quepan */
+#cliente0.ps-step-screen.is-visible-step > .dibujo {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#cliente0 .dibujo > #dibucliente {
+  height: auto !important;
+  flex: 0 0 auto;
+}
+
+#cliente0 #dibucliente img {
+  width: auto !important;
+  max-width: 110px;
+  height: auto !important;
+}
+
+@media screen and (max-width: 1100px) {
+  /* Bloques internos a una columna: evita campos estrujados en tablet */
+  #piscina .ps-piscina-layout,
+  #escalera .ps-escalera-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  #configurador .formtemp .ps-field-row,
+  #piscina .ps-field-row,
+  #escalera .ps-escalera-layout .ps-field-row {
+    grid-template-columns: minmax(110px, 40%) minmax(0, 1fr);
+  }
+
+  #configurador h2 {
+    font-size: 26px;
+  }
+
+  #escalera #dibuescalera,
+  #escalera #escaleraD,
+  #escalera #escaleraF {
+    padding: 20px;
+    min-height: 0;
+  }
+
+  #escalera #dibuescalera img,
+  #escalera #escaleraD img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #cliente0 .dibujo {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* Paso apilado: imagen arriba, formulario debajo a todo el ancho */
+  #configurador .ps-step-screen.is-visible-step {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  #configurador .ps-step-screen.is-visible-step > .pscover-media,
+  #configurador .ps-step-screen.is-visible-step > .dibujo {
+    flex: 0 0 auto;
+    width: 100% !important;
+    min-width: 0;
+    max-width: none;
+    height: 190px;
+    border-right: 0;
+    border-bottom: 1px solid var(--bc-border) !important;
+  }
+
+  #configurador .ps-step-screen.is-visible-step > .pscover-form,
+  #configurador .ps-step-screen.is-visible-step > .formtemp {
+    width: 100% !important;
+    padding: 14px 12px;
+  }
+
+  #configurador h2 {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  #configurador h2 img {
+    max-height: 40px;
+  }
+
+  /* Piscina: dibujo proporcionado al nuevo hueco */
+  #piscina #dibupiscina {
+    width: min(150px, 60%);
+    height: 150px;
+    margin: 0 auto;
+    border-width: 12px;
+  }
+
+  #piscina .dibujo > #dibupiscina {
+    display: block;
+  }
+
+  #piscina .dibujo {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Escalera: dibujo visible y opciones de enrollador/posicion a todo el ancho */
+  #escalera.ps-step-screen.is-visible-step > .dibujo {
+    height: auto;
+  }
+
+  #escalera #dibuescalera {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 12px;
+  }
+
+  #escalera #dibuescalera img,
+  #escalera #escaleraD img {
+    display: block;
+    max-height: 160px;
+    width: auto;
+  }
+
+  #escalera #escaleraF {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  #escalera #enrollador button,
+  #escalera #posicion1 button,
+  #escalera #posicion2 button {
+    width: calc(33.333% - 6px);
+    max-width: 110px;
+    margin: 3px;
+    vertical-align: top;
+  }
+
+  /* Lamas y soporte: muestras legibles */
+  #lamina .lamina-material-row .matlamina {
+    font-size: 14px;
+    line-height: 1.25;
+    padding: 12px 8px;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  #lamina .lamina-color-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  #lamina .collamina {
+    min-height: 88px;
+    font-size: 12px;
+  }
+
+  #lamina .collamina img {
+    width: 52px;
+    height: 38px;
+  }
+
+  #lacado .collacado {
+    min-height: 0;
+    font-size: 13px;
+  }
+
+  /* Precio: foto como cabecera */
+  #preciopvp.ps-step-screen.is-visible-step > .dibujo {
+    height: 160px;
+  }
+
+  #preciopvp #dibuprecio > img {
+    object-fit: cover !important;
+  }
+
+  /* Cliente: cabecera compacta con icono y titulo en linea */
+  #cliente0.ps-step-screen.is-visible-step > .dibujo {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 12px;
+    height: auto;
+    padding: 14px 12px;
+    font-size: 13px;
+  }
+
+  #cliente0 .dibujo > #dibucliente {
+    width: 48px !important;
+    height: 48px !important;
+    flex: 0 0 48px;
+  }
+
+  #cliente0 .dibujo > h2 {
+    margin: 0;
+  }
+
+  #cliente0 .dibujo > br {
+    display: none;
+  }
+
+  #cliente0 #imprimir {
+    width: 100%;
+  }
+
+  #cliente0 #comprobacion-mobile {
+    margin-top: 12px;
+  }
+
+  #cliente0 #comprobacion-mobile .comproba {
+    width: 100%;
+  }
+
+  #cliente0.ps-step-screen.is-visible-step > .dibujo {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  #cliente0 #dibucliente img {
+    max-width: 48px;
+  }
+
+  #cliente0 .dibujo .comprobacion.desktop,
+  #cliente0 .dibujo .cliente-obligatorios {
+    display: none !important;
+  }
+
+  #cliente0 #comprobacion-mobile {
+    text-align: left;
   }
 }

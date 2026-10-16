@@ -1,5 +1,5 @@
 <div id="precioneto">
-    <div class="dibujo pscover-media relative bg-lime-50">
+    <div class="dibujo pscover-media relative bg-sky-50">
         <div id="dibuprecio"><img src="../../../config/img/precio.jpg" width="100%"></div>
     </div>
     <div class="formtemp pscover-form flex flex-col">

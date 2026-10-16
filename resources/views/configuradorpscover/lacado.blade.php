@@ -1,5 +1,5 @@
 <div id="lacado" style="display: none;">
-    <div class="dibujo pscover-media relative bg-lime-50">
+    <div class="dibujo pscover-media relative bg-sky-50">
         <div id="dibulacado"><img class="lamina-preview-img" src="../../../config/img/laminas/soporte-blanco-terra-solar-26-c.png" width="100%"></div>
     </div>
 
@@ -11,7 +11,7 @@
 
         <div class="lacado-option-grid">
             <button type="button" class="collacado" name="collacado" id="collacado1" value="Blanco">
-                <img src="../../../config/img/laminas/soporte-blanco-terra-solar-26-c.png"><br>Blanco
+                <img src="../../../config/img/laminas/soporte-blanco-terra-solar-26-c.png"><br>Blanco nieve mate
             </button>
             <button type="button" class="collacado" name="collacado" id="collacado2" value="Gris Antracita">
                 <img src="../../../config/img/laminas/soporte-terra-solar-2026-marron.png"><br>Gris Antracita

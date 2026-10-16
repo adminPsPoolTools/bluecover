@@ -1,5 +1,5 @@
 <div id="escalera">
-    <div class="dibujo pscover-media relative bg-lime-50">
+    <div class="dibujo pscover-media relative bg-sky-50">
         <div id="dibuescalera"><img src="../../../config/img/escalera.png"></div>
 
         <div id="escaleraD" style="display: none;">
@@ -47,7 +47,7 @@
         <p class="text-sm text-slate-600 m-0">Configura presencia y medidas</p>
 
         <div class="ps-escalera-layout grid grid-cols-1 md:grid-cols-2 gap-3 mt-2">
-            <div class="ps-radio-col rounded-lg border border-lime-200 bg-lime-50/50 p-3">
+            <div class="ps-radio-col rounded-lg border border-sky-200 bg-sky-50/50 p-3">
                 <div class="mb-2 border-bottom titulo-modelo">Escalera</div>
 
                 <div class="ps-radio-option flex items-center gap-2">
