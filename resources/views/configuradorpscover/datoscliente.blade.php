@@ -1,12 +1,12 @@
 <div id="cliente0">
 
     <div class="dibujo pscover-media relative bg-sky-50">
-        <div id="dibucliente"><img src="../../../config/img/usuario.png"></div>
+        <div id="dibucliente"><img src="{{ asset('config') }}/img/usuario.png"></div>
         <h2>Datos personales</h2><br>
         <span class="cliente-obligatorios">Estos son los campos obligatorios:</span>
 
         <div id="comprobacion" class="comprobacion desktop">
-            <div class="comproba" id="comp-nombre"><img src="../../../config/img/checkok.png" align="absmiddle">
+            <div class="comproba" id="comp-nombre"><img src="{{ asset('config') }}/img/checkok.png" align="absmiddle">
                 <div class="txt">Nombre</div>
             </div>
         </div>
@@ -45,7 +45,7 @@
 
         <div id="comprobacion-mobile" class="comprobacion mobile">
             <div class="peque">Campos obligatorios:</div>
-            <div class="comproba" id="comp-nombre"><img src="../../../config/img/checkok.png" align="absmiddle">
+            <div class="comproba" id="comp-nombre"><img src="{{ asset('config') }}/img/checkok.png" align="absmiddle">
                 <div class="txt">Nombre</div>
             </div>
         </div>
@@ -54,7 +54,7 @@
         <div class="botones pscover-actions flex items-center gap-3">
             <div class="divsiguiente"><button id="inicio" class="btnsiguiente">Volver al inicio</button></div>
             <div class="divanterior"><button id="btnclienteA" class="btnanterior"><img
-                        src="../../../config/img/flecha-a.png" align="absmiddle"> Atr&aacute;s</button></div>
+                        src="{{ asset('config') }}/img/flecha-a.png" align="absmiddle"> Atr&aacute;s</button></div>
         </div>
 
     </div>

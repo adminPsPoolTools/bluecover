@@ -1,13 +1,13 @@
 <div id="final">
     <div class="dibujo pscover-media relative bg-sky-50">
-        <div id="dibuprecio"><img src="../../../config/img/cubierta.jpg" width="100%"></div>
+        <div id="dibuprecio"><img src="{{ asset('config') }}/img/cubierta.jpg" width="100%"></div>
     </div>
 
     <div class="formtemp pscover-form flex flex-col">
         <!-- <h2>¿Quieres enviarlo por email?</h2><br> -->
         <h2>Generar oferta</h2><br>
 
-        <form name="formemail" id="formemail" method="post" action="../../../config/lib/enviar_correo.php"
+        <form name="formemail" id="formemail" method="post" action="{{ asset('config') }}/lib/enviar_correo.php"
             target="_blank">
 
             <input type="hidden" name="TIPO" id="tipoemail" value="4">
@@ -24,10 +24,10 @@
 
         <div class="botones pscover-actions flex items-center gap-3">
             <div id="btnvolverFin" class="divsiguiente ocultar"><button class="btnanterior" style="width: 300px;"><img
-                        src="../../../config/img/flecha-a.png" align="absmiddle">
+                        src="{{ asset('config') }}/img/flecha-a.png" align="absmiddle">
                     Volver al inicio</button></div>
             <div id="btnFin" class="divanterior"><button id="btnfinalizarA" class="btnanterior"><img
-                        src="../../../config/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
+                        src="{{ asset('config') }}/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
         </div>
     </div>
 </div>

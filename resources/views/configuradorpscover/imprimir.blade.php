@@ -1,6 +1,6 @@
 <div id="imprimirdiv">
     <div class="dibujo pscover-media relative bg-sky-50">
-        <div id="dibuimprimir"><img src="../../../config/img/cubierta.jpg" width="100%"></div>
+        <div id="dibuimprimir"><img src="{{ asset('config') }}/img/cubierta.jpg" width="100%"></div>
     </div>
 
     <div class="formtemp pscover-form flex flex-col">
@@ -17,7 +17,7 @@
         <div class="botones pscover-actions flex items-center gap-3">
             <div class="divsiguiente"><button id="inicio" class="btnsiguiente">Volver al inicio</button></div>
             <div class="divanterior"><button id="btnimprimirA" class="btnanterior"><img
-                        src="../../../config/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
+                        src="{{ asset('config') }}/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
         </div>
     </div>
 </div>

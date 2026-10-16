@@ -1,9 +1,9 @@
 <div id="escalera">
     <div class="dibujo pscover-media relative bg-sky-50">
-        <div id="dibuescalera"><img src="../../../config/img/escalera.png"></div>
+        <div id="dibuescalera"><img src="{{ asset('config') }}/img/escalera.png"></div>
 
         <div id="escaleraD" style="display: none;">
-            <img src="../../../config/img/tipos_piscinas/dentro.png">
+            <img src="{{ asset('config') }}/img/tipos_piscinas/dentro.png">
         </div>
 
         <div id="escaleraF" style="display: none;">
@@ -12,20 +12,20 @@
                 Ten en cuenta que puede estar también al lado opuesto.<br><br>
 
                 <button name="posenrollador1" id="posenrollador1" value="F"><img
-                        src="../../../config/img/tipos_piscinas/1-0.png" width="100%"></button>
+                        src="{{ asset('config') }}/img/tipos_piscinas/1-0.png" width="100%"></button>
                 <button name="posenrollador2" id="posenrollador2" value="D"><img
-                        src="../../../config/img/tipos_piscinas/2-0.png" width="100%"></button>
+                        src="{{ asset('config') }}/img/tipos_piscinas/2-0.png" width="100%"></button>
             </div>
 
             <div id="posicion1">
                 Elige la posición de la <b>escalera</b>.<br>
                 Ten en cuenta que es aproximada y puede estar también al lado opuesto.<br><br>
                 <button class="posescalera" name="posescalera" id="posescalera15" value="15"><img
-                        src="../../../config/img/tipos_piscinas/1-5.png" width="100%"></button>
+                        src="{{ asset('config') }}/img/tipos_piscinas/1-5.png" width="100%"></button>
                 <button class="posescalera" name="posescalera" id="posescalera16" value="16"><img
-                        src="../../../config/img/tipos_piscinas/1-6.png" width="100%"></button>
+                        src="{{ asset('config') }}/img/tipos_piscinas/1-6.png" width="100%"></button>
                 <button class="posescalera" name="posescalera" id="posescalera17" value="17"><img
-                        src="../../../config/img/tipos_piscinas/1-7.png" width="100%"></button>
+                        src="{{ asset('config') }}/img/tipos_piscinas/1-7.png" width="100%"></button>
             </div>
 
             <div id="posicion2">
@@ -33,11 +33,11 @@
                 Ten en cuenta que es aproximada y puede estar también al lado opuesto.<br><br>
 
                 <button class="posescalera" name="posescalera" id="posescalera21" value="21"><img
-                        src="../../../config/img/tipos_piscinas/2-1.png" width="100%"></button>
+                        src="{{ asset('config') }}/img/tipos_piscinas/2-1.png" width="100%"></button>
                 <button class="posescalera" name="posescalera" id="posescalera22" value="22"><img
-                        src="../../../config/img/tipos_piscinas/2-2.png" width="100%"></button>
+                        src="{{ asset('config') }}/img/tipos_piscinas/2-2.png" width="100%"></button>
                 <button class="posescalera" name="posescalera" id="posescalera23" value="23"><img
-                        src="../../../config/img/tipos_piscinas/2-3.png" width="100%"></button>
+                        src="{{ asset('config') }}/img/tipos_piscinas/2-3.png" width="100%"></button>
             </div>
         </div>
     </div>
@@ -103,9 +103,9 @@
 
         <div class="botones btnescalera pscover-actions flex items-center gap-3">
             <div class="divsiguiente"><button id="btnescaleraS" class="btnsiguiente">Siguiente <img
-                        src="../../../config/img/flecha-s.png" align="absmiddle"></button></div>
+                        src="{{ asset('config') }}/img/flecha-s.png" align="absmiddle"></button></div>
             <div class="divanterior"><button id="btnescaleraA" class="btnanterior"><img
-                        src="../../../config/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
+                        src="{{ asset('config') }}/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
         </div>
     </div>
 </div>

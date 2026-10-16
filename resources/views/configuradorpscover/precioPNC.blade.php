@@ -1,10 +1,10 @@
 <div id="precioneto">
     <div class="dibujo pscover-media relative bg-sky-50">
-        <div id="dibuprecio"><img src="../../../config/img/precio.jpg" width="100%"></div>
+        <div id="dibuprecio"><img src="{{ asset('config') }}/img/precio.jpg" width="100%"></div>
     </div>
     <div class="formtemp pscover-form flex flex-col">
         <div id="mostrarprecio_neto">
-            <h2><img src="../../../config/img/icono-piscina.png"><br>P.N.C</h2>
+            <h2><img src="{{ asset('config') }}/img/icono-piscina.png"><br>P.N.C</h2>
             <div id="presupuesto" class="hidden"></div>
             <div class="salto" style="height: 5px;"></div>
             {{-- <button id="toggleButton" class="mostrar_neto">Mostrar</button> --}}
@@ -19,9 +19,9 @@
         </div>
         <div class="botones pscover-actions flex items-center gap-3">
             <div class="divsiguiente"><button id="btnprecioNETOS" class="btnsiguiente">Siguiente <img
-                        src="../../../config/img/flecha-s.png" align="absmiddle"></button></div>
+                        src="{{ asset('config') }}/img/flecha-s.png" align="absmiddle"></button></div>
             <div class="divanterior"><button id="btnprecioNETOA" class="btnanterior"><img
-                        src="../../../config/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
+                        src="{{ asset('config') }}/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
         </div>
     </div>
 </div>

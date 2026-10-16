@@ -1,7 +1,7 @@
 <div id="cubierta">
     <div class="dibujo pscover-media relative bg-sky-50">
         <div id="dibucubierta" style="display:flex; align-items:center; justify-content:center; width:100%; height:100%; padding:0;">
-            <img src="../../../config/img/cubierta.jpg" width="100%" style="width:100%; height:100%; object-fit:contain; object-position:center;">
+            <img src="{{ asset('config') }}/img/cubierta.jpg" width="100%" style="width:100%; height:100%; object-fit:contain; object-position:center;">
         </div>
     </div>
 
@@ -33,7 +33,7 @@
         </div>
         <div class="botones pscover-actions flex items-center gap-3" style="margin-top:12px; padding-top:8px;">
             <div class="divsiguiente"><button id="btncubiertaS" class="btnsiguiente" disabled>Siguiente
-                    <img src="../../../config/img/flecha-s.png" align="absmiddle"></button></div>
+                    <img src="{{ asset('config') }}/img/flecha-s.png" align="absmiddle"></button></div>
         </div>
     </div>
 </div>

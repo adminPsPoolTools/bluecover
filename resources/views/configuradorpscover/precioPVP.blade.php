@@ -1,10 +1,10 @@
 <div id="preciopvp">
     <div class="dibujo pscover-media relative bg-sky-50">
-        <div id="dibuprecio"><img src="../../../config/img/precio.jpg" width="100%"></div>
+        <div id="dibuprecio"><img src="{{ asset('config') }}/img/precio.jpg" width="100%"></div>
     </div>
     <div class="formtemp pscover-form flex flex-col">
         <div id="mostrarprecio">
-            <h2><img src="../../../config/img/icono-piscina.png"><br>P.V.P</h2>
+            <h2><img src="{{ asset('config') }}/img/icono-piscina.png"><br>P.V.P</h2>
             <div id="presupuestoPVP"></div>
             <div class="salto" style="height: 5px;"></div>
             <div class="peque">Los precios mostrados son estimados y con IVA
@@ -19,15 +19,15 @@
         </div>
 
         <div id="enviando">
-            <div id="txt"><img src="../../../config/img/cargando1.gif" width="100" align="absmiddle"><br class="mobile">
+            <div id="txt"><img src="{{ asset('config') }}/img/cargando1.gif" width="100" align="absmiddle"><br class="mobile">
                 Por favor, no cierre la página</div>
         </div>
 
         <div class="botones pscover-actions flex items-center gap-3">
             <div class="divsiguiente"><button id="btnprecioPVPS" class="btnsiguiente">Siguiente <img
-                        src="../../../config/img/flecha-s.png" align="absmiddle"></button></div>
+                        src="{{ asset('config') }}/img/flecha-s.png" align="absmiddle"></button></div>
             <div class="divanterior"><button id="btnprecioPVPA" class="btnanterior"><img
-                        src="../../../config/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
+                        src="{{ asset('config') }}/img/flecha-a.png" align="absmiddle"> Atrás</button></div>
         </div>
     </div>
 </div>

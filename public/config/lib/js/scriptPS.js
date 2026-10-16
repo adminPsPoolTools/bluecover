@@ -2,6 +2,8 @@
 $(document).ready(function () {
 
     var url = "../config/lib/pscover.php";
+    // Ruta base de las imagenes (la define la vista con asset()); fallback a la ruta relativa antigua
+    var pscoverBase = window.PSCOVER_BASE || "../../../config/";
 
     function aplicarConfiguracionFijaTerraSolar() {
         $("#tipoCubierta").val("C");
@@ -139,7 +141,7 @@ $(document).ready(function () {
     $("#btncubiertaS").prop('disabled', true);
 
     $("#tipocubierta1").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/sumergida.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/sumergida.jpg\" width=\"100%\">");
         $("#delta").show();
         $("#altea").hide();
         $("#acabadocubierta").fadeOut();
@@ -151,7 +153,7 @@ $(document).ready(function () {
     });
 
     $("#tipocubierta2").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/coronacion.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/coronacion.jpg\" width=\"100%\">");
         $("#altea").show();
         $("#delta").hide();
         $("#acabadocubierta").fadeOut();
@@ -163,7 +165,7 @@ $(document).ready(function () {
     });
 
     $("#deltaA").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/modelos/deck.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/modelos/deck.jpg\" width=\"100%\">");
         $("#acabadocubierta").fadeIn();
         $("#opcion_deltaB, #opcion_deltaCD").hide();
         $("#ipe_revestir").hide();
@@ -171,7 +173,7 @@ $(document).ready(function () {
     });
 
     $("#deltaB").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/modelos/top.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/modelos/top.jpg\" width=\"100%\">");
         $("#acabadocubierta").fadeOut();
         $("#opcion_deltaB").show();
         $("#opcion_deltaCD").hide();
@@ -179,7 +181,7 @@ $(document).ready(function () {
     });
 
     $("#deltaC").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/modelos/duo.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/modelos/duo.jpg\" width=\"100%\">");
         $("#acabadocubierta").fadeOut();
         $("#opcion_deltaB").hide();
         $("#opcion_deltaCD").show();
@@ -187,7 +189,7 @@ $(document).ready(function () {
     });
 
     $("#deltaD").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/modelos/cave.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/modelos/cave.jpg\" width=\"100%\">");
         $("#acabadocubierta").fadeOut();
         $("#opcion_deltaB").hide();
         $("#opcion_deltaCD").show();
@@ -195,7 +197,7 @@ $(document).ready(function () {
     });
 
     $("#altea0").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/modelos/terra.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/modelos/terra.jpg\" width=\"100%\">");
         $("#acabadocubierta").fadeOut();
         $("#opcion_deltaB").hide();
         $("#opcion_deltaCD").hide();
@@ -203,21 +205,21 @@ $(document).ready(function () {
     });
 
     $("#terra_lite").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/modelos/terra_lite.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/modelos/terra_lite.jpg\" width=\"100%\">");
         $("#acabadocubierta").fadeOut();
         $("#opcion_deltaB").hide();
         $("#opcion_deltaCD").hide();
         $("#btncubiertaS").prop('disabled', false);
     });
     $("#terra_slim").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/modelos/terra_slim.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/modelos/terra_slim.jpg\" width=\"100%\">");
         $("#acabadocubierta").fadeOut();
         $("#opcion_deltaB").hide();
         $("#opcion_deltaCD").hide();
         $("#btncubiertaS").prop('disabled', false);
     });
     $("#terra_solar").click(function () {
-        $("#dibucubierta").html("<img src=\"../../../config/img/modelos/terra_solar.jpg\" width=\"100%\">");
+        $("#dibucubierta").html("<img src=\"" + pscoverBase + "img/modelos/terra_solar.jpg\" width=\"100%\">");
         $("#acabadocubierta").fadeOut();
         $("#opcion_deltaB").hide();
         $("#opcion_deltaCD").hide();
@@ -414,7 +416,7 @@ $(document).ready(function () {
     $("#btnlaminaS").prop('disabled', true);
 
     $("#matlamina1").click(function () {
-        $("#dibulamina").html("<img class=\"lamina-preview-img\" src=\"../../../config/img/laminas/policarbonato.jpg\" width=\"100%\">");
+        $("#dibulamina").html("<img class=\"lamina-preview-img\" src=\"" + pscoverBase + "img/laminas/policarbonato.jpg\" width=\"100%\">");
         $("#divpvc").css("display", "none");
         $("#divpc").css("display", "grid");
         $(".matlamina").removeClass("activo");
@@ -423,7 +425,7 @@ $(document).ready(function () {
     });
 
     $("#matlamina2").click(function () {
-        $("#dibulamina").html("<img class=\"lamina-preview-img\" src=\"../../../config/img/laminas/pvc.jpg\" width=\"100%\">");
+        $("#dibulamina").html("<img class=\"lamina-preview-img\" src=\"" + pscoverBase + "img/laminas/pvc.jpg\" width=\"100%\">");
         $("#divpc").css("display", "none");
         $("#divpvc").css("display", "grid");
         $(".matlamina").removeClass("activo"); $(this).addClass("activo");

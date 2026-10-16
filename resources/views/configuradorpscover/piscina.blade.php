@@ -27,7 +27,7 @@
 
         <div class="botones pscover-actions flex items-center gap-3">
             <div class="divsiguiente"><button id="btnpiscinaS" class="btnsiguiente">Siguiente <img
-                        src="../../../config/img/flecha-s.png" align="absmiddle"></button></div>
+                        src="{{ asset('config') }}/img/flecha-s.png" align="absmiddle"></button></div>
         </div>
     </div>
 </div>

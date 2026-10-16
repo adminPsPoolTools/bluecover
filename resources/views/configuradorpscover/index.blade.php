@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="{{ asset('config/lib/css/configurador.css') }}?v={{ filemtime(public_path('config/lib/css/configurador.css')) }}" />
+    <script>
+        window.PSCOVER_BASE = @json(asset('config') . '/');
+    </script>
     <script src="{{ asset('config/lib/js/jquery.min.js') }}"></script>
     <script
         src="{{ asset('config/lib/js/scriptPS.js') }}?v={{ filemtime(public_path('config/lib/js/scriptPS.js')) }}"></script>
